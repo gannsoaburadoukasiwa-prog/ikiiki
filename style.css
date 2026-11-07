@@ -1,0 +1,59 @@
+body {
+    background-image: url("https://cdn.prod.website-files.com/6791eff2900b9120024fe198/67ad8d2631f6d25298b85827_ogp.jpg"); /* 👈 ここに実際の画像ファイル名を入れます */
+    background-size: cover;                    /* 画面全体に画像をぴったり引き伸ばす */
+    background-position: center;              /* 画像の中心が画面の真ん中に来るようにする */
+    background-attachment: fixed;              /* スクロールしても背景画像が動かないように固定する */
+    background-repeat: no-repeat;              /* 画像が格子状に繰り返されるのを防ぐ */
+    margin: 0;                                 /* 画面の端の余計な隙間をなくす */
+}
+h1 {
+     font-family: "HGP明朝E", "Yu Mincho", "MS明朝", serif;
+    color: #000000;                /* 文字の色：黒 */
+    background-color: rgba(255, 255, 255, 0.7); /* 背景：透明な白 */
+    margin-top: 250px;             /* 上から150px落とす */
+    padding: 15px 30px;            /* 上下に15px、左右に30pxの余白を作って綺麗な四角にする */
+    text-align: center;            /* 真ん中寄せ */
+    display: inline-block;         /* 文字の長さに合わせて四角形の横幅を自動で縮める設定 */
+    
+    /* 👇 カドを丸い四角にするためのコード */
+    border-radius: 12px;           /* 数字を大きくするほど、カドがさらに丸くなります */
+}
+
+p {
+    color: #ff0000;                /* 文字の色を「赤」にする */
+    background-color: #ffff00;    /* 背景の色を「黄色」にする */
+    padding: 10px 20px;            /* 文字のまわりに少し余白を作る */
+    text-align: center;            /* 文字を真ん中寄せにする */
+    display: inline-block;         /* 文字の長さに合わせて黄色の背景を縮める */
+    border-radius: 8px;            /* カドを少し丸くしてボタンらしくする */
+    font-weight: bold;   /* 文字を太字にしてさらに見やすくする */
+              /* 真ん中寄せにするための準備 */
+     margin-top: 20px;
+    font-size: 36px;               /* 文字の大きさを大きく（前の約1.5倍） */
+    padding: 10px 25px;   
+}
+
+/* 👇 リンク文字の下にある線を消してすっきりさせる設定 */
+a {
+    text-decoration: none;
+}
+
+p {
+    transition: transform 0.1s ease; /* 縮む・戻る動きをなめらかにする */
+    cursor: pointer;                 /* マウスを乗せたときに指マークにする */
+}
+
+p:active {
+    transform: scale(0.95);          /* クリックした瞬間に全体の大きさを0.95倍（5%縮む）にする */
+}
+
+a {
+    text-decoration: none;   /* 下線を消す */
+    display: flex;           /* 真ん中寄せにするための準備 */
+    justify-content: center; /* 左右の真ん中に配置する */
+}
+
+h1 {text-decoration: none;   /* 下線を消す */
+    display: flex;           /* 真ん中寄せにするための準備 */
+    justify-content: center; /* 左右の真ん中に配置する */
+}
